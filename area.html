@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <section class="mt-5">
+      <div class="container mt-5 mb-5">
+        <div class="row gy-4" id="row4"></div>
+      </div>
+    </section>
+
+    <nav
+      class="navbar d-flex justify-content-center align-items-center z-1"
+      id="mainnav"
+    >
+      <div class="sidenav1 bg-black text-white" id="nav1">
+        <ul class="mtList">
+          <li onclick="navClick('search')">Search</li>
+          <li onclick="navClick('category')">Categories</li>
+          <li onclick="navClick('area')">Area</li>
+          <li onclick="navClick('engrid')">Ingredients</li>
+          <li onclick="navClick('contact')">Contact Us</li>
+        </ul>
+        <div class="ps-4">
+          <div class="d-flex gap-2 mb-2">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div>
+            <p>Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sidenav2 bg-white text-black h-100">
+        <div><img class="logo" src="./img/logo.png" alt="" srcset="" /></div>
+        <div id="switchBtn">
+          <i
+            class="fa-solid open-close-icon fa-2x fa-x"
+            id="closeBtn"
+            onclick="switt2()"
+          ></i>
+        </div>
+        <div class="d-flex icons-container">
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </nav>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/area.js"></script>
+  </body>
+</html>
